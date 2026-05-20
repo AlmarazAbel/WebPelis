@@ -69,7 +69,7 @@ const Admin = ({ movies, onAddMovie, onDeleteMovie, onUpdateMovie, onLogout }: A
     
     <div className="min-h-screen bg-[#070b17] p-8 pt-24 text-white">
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           <div>
             <h1 className="text-3xl font-bold">Panel de Administración</h1>
             <p className="text-gray-400 text-sm">Bienvenido, Admin</p>
@@ -96,9 +96,10 @@ const Admin = ({ movies, onAddMovie, onDeleteMovie, onUpdateMovie, onLogout }: A
           </div>
         </div>
 
-        <div className="bg-[#111827] rounded-xl overflow-hidden border border-gray-800">
-          <table className="w-full text-left text-gray-300">
-            <thead className="bg-gray-800 text-gray-100 uppercase text-sm">
+        < div className="bg-[#111827] rounded-xl overflow-hidden border border-gray-800 overflow-x-auto">
+        
+          <table className="w-full text-left text-gray-300 ">
+            <thead className="bg-gray-800 text-gray-100 uppercase text-sm ">
               <tr>
                 <th className="p-4">Imagen</th>
                 <th className="p-4">Nombre</th>
@@ -107,7 +108,7 @@ const Admin = ({ movies, onAddMovie, onDeleteMovie, onUpdateMovie, onLogout }: A
                 <th className="p-4 text-center">Acciones</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-800">
+            <tbody className="divide-y divide-gray-800 ">
               {movies.map((movie) => (
                 <tr key={movie.id} className="hover:bg-gray-800/50 transition">
                   <td className="p-4">
@@ -141,6 +142,7 @@ const Admin = ({ movies, onAddMovie, onDeleteMovie, onUpdateMovie, onLogout }: A
               ))}
             </tbody>
           </table>
+        
         </div>
 
         {/* 4. El Modal fuera de la tabla pero dentro del div principal */}
