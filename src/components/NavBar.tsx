@@ -136,7 +136,10 @@ const categories = ["Acción", "Comedia", "Drama", "Terror", "Ciencia ficción"]
               </button>
             </div>
 
-            <button className="flex items-center justify-center gap-2 bg-amber-600 px-4 py-3 rounded-md text-white font-bold mt-2">
+            <button onClick={() => {
+        navigate("/login");
+        setMenuOpen(false);}}
+             className="flex items-center justify-center gap-2 bg-amber-600 px-4 py-3 rounded-md text-white font-bold mt-2">
               <FaUserCircle />
               Login
             </button>
