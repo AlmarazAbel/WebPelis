@@ -130,6 +130,7 @@ const categories = ["Acción", "Comedia", "Drama", "Terror", "Ciencia ficción"]
                 type="text"
                 placeholder="Buscar..."
                 className="bg-transparent text-white px-4 py-2 outline-none w-full"
+                 onChange={(e) => onSearch(e.target.value)}
               />
               <button className="px-4 text-gray-300">
                 <FaSearch />
