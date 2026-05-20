@@ -64,6 +64,7 @@ Permite previsualizar el build de producción.
 - `/` - Catálogo principal.
 - `/login` - Login administrador.
 - `/admin` - Panel de administración.
+- `/pagina404` - Panel de error/no encontrada.
 
 ## Credenciales de prueba
 
@@ -85,6 +86,7 @@ src/
 │   ├── Admin.tsx
 │   ├── Home.tsx
 │   └── Login.tsx
+│   └── Pagina404.tsx
 ├── App.tsx
 ├── main.tsx
 └── index.css
