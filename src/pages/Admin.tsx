@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {type Movie } from "../data/movies";
+import { type Movie } from "../data/movies";
 import Swal from "sweetalert2";
 // 1. Los imports SIEMPRE van arriba de todo, fuera del componente
 import MovieModal from "../components/MovieModal";
